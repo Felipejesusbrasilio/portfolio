@@ -1,0 +1,111 @@
+.div-skill
+{
+	border: 1px solid black;
+	width: 100%;
+	height: 300px;
+	background-color: black;
+	display: flex;
+	padding: 10px;
+	justify-content: center;
+}
+
+.div-skill .title-skill-two
+{
+	/*border: 1px solid white;*/
+	display: grid;
+	place-items: center;
+	padding: 10px;
+}
+
+.div-skill .title-skill-two h1 
+{
+	color: white;
+}
+
+.div-skill .btn-one
+{
+	/*border: 1px solid white;*/
+	width: 30%;
+	height: 100%;
+	display: grid;
+	place-items: center;
+}
+
+.div-skill .btn-one button 
+{
+	background-color: transparent;
+	border-style: none;
+}
+
+.div-skill .btn-one button svg 
+{
+	color: white;
+	width: 100px;
+	height: 100px;
+}
+
+.div-skill .quadro
+{
+	/*border: 1px solid white;*/
+	width: 30%;
+	height: 100%;
+	display: grid;
+	place-items: center;
+}
+
+.div-skill .btn-two
+{
+	/*border: 1px solid white;*/
+	width: 30%;
+	height: 100%;
+	display: grid;
+	place-items: center;
+}
+
+.div-skill .btn-two button
+{
+	background-color: transparent;
+	border-style: none;
+}
+
+.div-skill .btn-two button svg
+{
+	color: white;
+	width: 100px;
+	height: 100px;
+}
+
+
+
+@media only screen and (max-width: 1024px)
+{
+
+}
+
+
+@media only screen and (max-width: 600px)
+{
+
+.div-skill
+{
+	display: flex;
+	flex-direction: column;	
+	height: 600px;
+}
+
+.div-skill .btn-one
+{
+	width: 100%;
+}
+
+.div-skill .quadro
+{
+	width: 100%;
+}
+
+.div-skill .btn-two
+{
+	width: 100%;
+}
+
+}

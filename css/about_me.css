@@ -1,0 +1,88 @@
+.title-about-me
+{
+	/*border: 1px solid black;*/
+	width: 100%;
+	height: 80px;
+	display: grid;
+	place-items: center;
+}
+
+.central-divs
+{
+	/*border: 1px solid black;*/
+	width: 100%;
+	height: 500px;
+	display: flex;
+}
+
+.central-divs .img 
+{
+	/*border: 1px solid black;*/
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.central-divs .img img 
+{
+	width: 500px;
+	height: 500px;
+	border-radius: 100%;
+}
+
+.central-divs .sobre 
+{
+	/*border: 1px solid black;*/
+	width: 50%;
+	height: 100%;
+}
+
+
+@media only screen and (max-width: 1280px)
+{
+  .central-divs
+  {
+  	height: 600px;
+  }
+}
+
+@media only screen and (max-width: 1024px)
+{
+
+	   .central-divs
+	   {
+       height: 300px;
+	   }
+	   
+    .central-divs .img img 
+    {
+    	width: 300px;
+    	height: 300px;
+    }
+}
+
+@media only screen and (max-width: 600px)
+{
+	.central-divs
+	{
+		flex-direction: column;
+		height: 500px;
+	}
+
+	.central-divs .img 
+	{
+		width: 100%;
+	}
+
+	.central-divs .sobre
+	{
+		width: 100%;
+	}
+
+	.central-divs .img img 
+	{
+		width: 300px;
+		height: 300px;
+	}
+}

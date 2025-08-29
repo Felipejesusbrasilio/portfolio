@@ -1,0 +1,114 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+
+header
+{
+	/*border: 1px solid black;*/
+	width: 100%;
+	height: 80px;
+	display: flex;
+	padding: 15px;
+	display: flex;
+}
+
+header .div-bola
+{
+	/*border: 1px solid black;*/
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	background-color: black;
+	animation: animar 0.3s infinite;
+}
+
+header .div-bola img 
+{
+	width: 100px;
+}
+
+
+@keyframes animar {
+	0%{background-color: white;}
+	20%{background-color: black;}
+	40%{background-color: white;}
+	60%{background-color: black;}
+	80%{background-color: white;}
+	100%{background-color: black;}
+}
+
+header .div-central 
+{
+	/*border: 1px solid black;*/
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+header .div-central .name-one
+{
+	/*border: 1px solid red;*/
+	width: 50%;
+	height: 100%;
+	display: grid;
+	place-items: center;
+}
+
+header .div-central .name-two
+{
+	/*border: 1px solid blue;*/
+	width: 50%;
+	height: 100%;
+	overflow: auto;
+	display: grid;
+	place-items: center;
+}
+
+
+
+
+@media only screen and (max-width: 1280px)
+{
+  header .div-central .name-two h1
+	{
+		font-size: 20px;
+	}
+}
+
+
+@media only screen and (max-width: 1024px)
+{
+	header .div-central .name-two h1
+	{
+		font-size: 20px;
+	}
+}
+
+
+@media only screen and (max-width: 600px)
+{
+	header .div-bola img 
+	{
+       width: 80px;
+       margin-left: -15px;
+	}
+
+	header .div-central .name-one
+	{
+		display: none;
+	}
+
+	header .div-central .name-two
+	{
+		width: 100%;
+	}
+
+	header .div-central .name-two h1
+	{
+		font-size: 20px;
+	}
+}

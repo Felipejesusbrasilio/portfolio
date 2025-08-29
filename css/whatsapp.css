@@ -1,0 +1,38 @@
+.whatsapp
+{
+	/*border: 1px solid red;*/
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	background-color: lightgreen;
+	position: fixed;
+	top: 100px;
+	right: 20px;
+	display: grid;
+	place-items: center;
+
+}
+
+.whatsapp img 
+{
+	animation: animar_whats 0.3s infinite;
+}
+
+
+@keyframes animar_whats{
+	0%{margin-left: -10px}
+	20%{margin-left: 0px}
+	40%{margin-left: 10px}
+	60%{margin-left: 0px}
+	80%{margin-left: -10px}
+	100%{margin-left: 0px}
+}
+
+
+@media only screen and (max-width: 600px)
+{
+	.whatsapp
+	{
+		top: 150px;
+	}
+}
