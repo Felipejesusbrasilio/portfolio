@@ -10,6 +10,15 @@ buttonOne.addEventListener('click', function () {
     if (index < arrayImagem.length - 1) {
         index++;
         imgElement.src = arrayImagem[index];
+        
+        imgElement.style.transition = 'opacity 1s'; // aplica a transição no elemento de imagem
+        imgElement.style.opacity = 0; // começa com opacidade 0 para o efeito de fade
+
+        // espera um pequeno tempo para trocar a imagem e voltar a opacidade
+        setTimeout(() => {
+            imgElement.src = arrayImagem[index];
+            imgElement.style.opacity = 1; // volta a opacidade para 1, ativando a transição
+        }, 1000);
     }
 });
 
@@ -20,5 +29,14 @@ buttonTwo.addEventListener('click', function () {
     if (index > 0) {
         index--;
         imgElement.src = arrayImagem[index];
+
+        imgElement.style.transition = 'opacity 1s'; // aplica a transição no elemento de imagem
+        imgElement.style.opacity = 0; // começa com opacidade 0 para o efeito de fade
+
+        // espera um pequeno tempo para trocar a imagem e voltar a opacidade
+        setTimeout(() => {
+            imgElement.src = arrayImagem[index];
+            imgElement.style.opacity = 1; // volta a opacidade para 1, ativando a transição
+        }, 1000);
     }
 });
