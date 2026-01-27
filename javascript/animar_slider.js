@@ -1,6 +1,6 @@
 let index = 0;
 
-let arrayImagem = ['imagem/imagem01.png','imagem/imagem02.png','imagem/imagem03.png','imagem/imagem04.png','imagem/imagem05.png','imagem/imagem06.png'];
+let arrayImagem = ['imagem/imagem01.png','imagem/imagem02.png','imagem/imagem03.png','imagem/imagem04.png','imagem/imagem05.png','imagem/imagem06.png','imagem/imagem01.png'];
 
 let imgElement = document.querySelector('#imagem');
 
