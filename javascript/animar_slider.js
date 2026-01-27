@@ -1,42 +1,46 @@
+// índice da imagem atual
 let index = 0;
 
-let arrayImagem = ['imagem/imagem01.png','imagem/imagem02.png','imagem/imagem03.png','imagem/imagem04.png','imagem/imagem05.png','imagem/imagem06.png','imagem/imagem01.png'];
+// array de imagens (SEM duplicação)
+let arrayImagem = [
+  'imagem/imagem01.png',
+  'imagem/imagem02.png',
+  'imagem/imagem03.png',
+  'imagem/imagem04.png',
+  'imagem/imagem05.png',
+  'imagem/imagem06.png'
+];
 
+// elemento da imagem
 let imgElement = document.querySelector('#imagem');
 
-let buttonOne = document.querySelector('.btn-one button');
+// botões
+let buttonNext = document.querySelector('.btn-one button');
+let buttonPrev = document.querySelector('.btn-two button');
 
-buttonOne.addEventListener('click', function () {
-    if (index < arrayImagem.length - 1) {
-        index++;
-        imgElement.src = arrayImagem[index];
-        
-        imgElement.style.transition = 'opacity 1s'; // aplica a transição no elemento de imagem
-        imgElement.style.opacity = 0; // começa com opacidade 0 para o efeito de fade
+// garante que a primeira imagem carregue
+imgElement.src = arrayImagem[index];
 
-        // espera um pequeno tempo para trocar a imagem e voltar a opacidade
-        setTimeout(() => {
-            imgElement.src = arrayImagem[index];
-            imgElement.style.opacity = 1; // volta a opacidade para 1, ativando a transição
-        }, 1000);
-    }
+// função responsável pela troca com fade
+function trocarImagem() {
+  imgElement.style.transition = 'opacity 0.5s ease';
+  imgElement.style.opacity = 0;
+
+  setTimeout(() => {
+    imgElement.src = arrayImagem[index];
+    imgElement.style.opacity = 1;
+  }, 500);
+}
+
+// botão NEXT (direita)
+buttonNext.addEventListener('click', function () {
+  index = (index + 1) % arrayImagem.length;
+  trocarImagem();
 });
 
-
-let buttonTwo = document.querySelector('.btn-two button');
-
-buttonTwo.addEventListener('click', function () {
-    if (index > 0) {
-        index--;
-        imgElement.src = arrayImagem[index];
-
-        imgElement.style.transition = 'opacity 1s'; // aplica a transição no elemento de imagem
-        imgElement.style.opacity = 0; // começa com opacidade 0 para o efeito de fade
-
-        // espera um pequeno tempo para trocar a imagem e voltar a opacidade
-        setTimeout(() => {
-            imgElement.src = arrayImagem[index];
-            imgElement.style.opacity = 1; // volta a opacidade para 1, ativando a transição
-        }, 1000);
-    }
+// botão PREV (esquerda)
+buttonPrev.addEventListener('click', function () {
+  index = (index - 1 + arrayImagem.length) % arrayImagem.length;
+  trocarImagem();
 });
+
