@@ -1,0 +1,233 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.centralModal
+{
+    /*border: 1px solid black;*/
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.centralModal .centralCloseModal
+{
+    /*border: 1px solid black;*/
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centralModal .centralCloseModal .closeModal
+{
+    /*border: 1px solid red;*/
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.centralModal .centralCloseModal .closeModal svg 
+{
+    width: 50px;
+    height: 50px;
+    color: white;
+    margin-right: 10px;
+    background-color: black;
+    border-radius: 100%;
+    padding: 10px;
+}
+
+.centralModal .bodyModal
+{
+    /*border: 2px solid black;*/
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centralModal .bodyModal .Modal 
+{
+    /*border: 1px solid red;*/
+    width: 50%;
+    height: 100%;
+}
+
+.centralModal .bodyModal .Modal .modalCartinha
+{
+    /*border: 1px solid blue;*/
+    width: 100%;
+    height: 100px;
+    display: grid;
+    place-items: center;
+}
+
+.centralModal .bodyModal .Modal .modalCartinha .cartinha 
+{
+    /*border: 1px solid black;*/
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.centralModal .bodyModal .Modal .modalCartinha .cartinha img {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    animation: animar_tiger 2.5s ease-in-out infinite;
+    top: 50%;  /* Para manter a imagem centrada verticalmente */
+    left: 50%; /* Para manter a imagem centrada horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta o centro da imagem */
+}
+
+@keyframes animar_tiger {
+    0% {
+        transform: translate(-50%, -50%) translateX(0); /* Começa no meio */
+    }
+    25% {
+        transform: translate(-50%, -50%) translateX(-100px); /* Vai para a esquerda */
+    }
+    50% {
+        transform: translate(-50%, -50%) translateX(0); /* Volta para o meio */
+    }
+    75% {
+        transform: translate(-50%, -50%) translateX(100px); /* Vai para a direita */
+    }
+    100% {
+        transform: translate(-50%, -50%) translateX(0); /* Volta para o meio */
+    }
+}
+
+.centralModal .bodyModal .Modal .CentralDivs {
+    border: 1px solid  yellow;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+    gap: 0px; 
+}
+
+.centralModal .bodyModal .Modal .CentralDivs .box {
+    /*border: 1px solid blue;*/
+    flex: 0 0 33.33%; 
+    height: 33.33%; 
+    display: grid;
+    place-items: center;
+    transform: translateY(-960px);
+    transition: transform 1s ease-out;
+}
+
+
+.centralModal .bodyModal .Modal .CentralDivs .box img 
+{
+    width: 100px;
+    height: 100x;
+    animation: react_router 1s infinite;
+}
+
+@keyframes react_router{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+
+.centralModal .bodyModal .Modal .CentralDivs #id9
+{
+   transform: translateY(0px);
+   animation-delay: 1s;
+}
+
+.centralModal .bodyModal .Modal .CentralDivs #id8
+{
+   transform: translateY(0px);
+   animation-delay: 1s;
+}
+
+.centralModal .bodyModal .Modal .CentralDivs #id7
+{
+   transform: translateY(0px);
+   animation-delay: 1s;
+}
+
+.centralModal .bodyModal .Modal .CentralDivs #id6
+{
+   transform: translateY(0px);
+   animation-delay: 1s;
+}
+
+.centralModal .bodyModal .Modal .CentralDivs #id5
+{
+   transform: translateY(0px);
+   animation-delay: 1s;
+}
+
+.centralModal .bodyModal .Modal .CentralDivs #id4
+{
+   transform: translateY(0px);
+   animation-delay: 1s;
+}
+
+.centralModal .bodyModal .Modal .CentralDivs #id3
+{
+   transform: translateY(0px);
+   animation-delay: 1s;
+}
+
+.centralModal .bodyModal .Modal .CentralDivs #id2
+{
+   transform: translateY(0px);
+   animation-delay: 1s;
+}
+
+.centralModal .bodyModal .Modal .CentralDivs #id1
+{
+   transform: translateY(0px);
+   animation-delay: 1s;
+}
+
+@media only screen and (max-width: 600px)
+{
+    .centralModal .bodyModal .Modal
+    {
+        width: 100%;
+    }
+
+    .centralModal .centralCloseModal .closeModal
+    {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.nova-div
+{
+    /*border: 1px solid red;*/
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.nova-div #animar_react
+{
+  animation: animar_img 1s infinite;
+}
+
+
+@keyframes animar_img{
+    from{transform: rotate(0deg));}
+    to{transform: rotate(360deg);}
+}
