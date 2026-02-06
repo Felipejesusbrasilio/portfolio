@@ -2,7 +2,7 @@
   setTimeout(()=>{
    
   
-    fetch('http://localhost/portfolio/modal.html')
+    fetch('https://felipejesusbrasilio.github.io/portfolio/modal.html')
   .then(result => {
     return result.text();
   })
