@@ -19,7 +19,7 @@
 
     divClose.addEventListener('click', function() {
 
-     let central = document.querySelector('.centralModal');
+     let central = document.querySelector('#getPageModal');
 
      central.remove();
 
