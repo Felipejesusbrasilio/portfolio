@@ -3,12 +3,16 @@ let index = 0;
 
 // array de imagens (SEM duplicação)
 let arrayImagem = [
-  'imagem/imagem01.png',
-  'imagem/imagem02.png',
-  'imagem/imagem03.png',
-  'imagem/imagem04.png',
-  'imagem/imagem05.png',
-  'imagem/imagem06.png'
+  'imagem/logo-react.png',
+  'imagem/logo-html.png',
+  'imagem/logo-css.png',
+  'imagem/logo-node.png',
+  'imagem/logo-javascript.png',
+  'imagem/logo-node.png',
+  'imagem/logo-php.png',
+  'imagem/logo-mysql.png',
+  'imagem/logo-git.png',
+  'imagem/logo-redux.png'
 ];
 
 // elemento da imagem
