@@ -8,7 +8,6 @@ let arrayImagem = [
   'imagem/logo-css.png',
   'imagem/logo-node.png',
   'imagem/logo-javascript.png',
-  'imagem/logo-node.png',
   'imagem/logo-php.png',
   'imagem/logo-mysql.png',
   'imagem/logo-git.png',
